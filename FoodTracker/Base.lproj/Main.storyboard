@@ -47,9 +47,13 @@
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Edm-7F-6Qy">
                                         <rect key="frame" x="0.0" y="80.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Edm-7F-6Qy" secondAttribute="height" multiplier="1:1" id="ynv-29-RWq"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="liG-KK-Pv0" appends="YES" id="1pz-Gv-MES"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -67,9 +71,11 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="2yL-gy-84Y" id="gRW-Ht-Tew"/>
                         <outlet property="nameTextField" destination="xWC-tr-s5B" id="Oyw-R2-wYO"/>
+                        <outlet property="photoImageView" destination="Edm-7F-6Qy" id="g9Q-aL-4Tn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="liG-KK-Pv0"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
