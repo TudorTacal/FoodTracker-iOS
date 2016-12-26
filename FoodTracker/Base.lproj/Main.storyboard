@@ -72,12 +72,17 @@
                         <outlet property="mealNameLabel" destination="2yL-gy-84Y" id="gRW-Ht-Tew"/>
                         <outlet property="nameTextField" destination="xWC-tr-s5B" id="Oyw-R2-wYO"/>
                         <outlet property="photoImageView" destination="Edm-7F-6Qy" id="g9Q-aL-4Tn"/>
+                        <outlet property="selectImageFromPhotoLibrary" destination="liG-KK-Pv0" id="fXB-1g-Egx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="liG-KK-Pv0"/>
+                <tapGestureRecognizer id="liG-KK-Pv0">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="G08-ks-HMu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-226" y="37"/>
         </scene>
     </scenes>
     <resources>
