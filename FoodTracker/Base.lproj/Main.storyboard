@@ -45,7 +45,7 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FI5-IB-ee2"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="Edm-7F-6Qy">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Edm-7F-6Qy">
                                         <rect key="frame" x="0.0" y="80.5" width="320" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Edm-7F-6Qy" secondAttribute="height" multiplier="1:1" id="ynv-29-RWq"/>
@@ -74,4 +74,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="100" height="100"/>
+    </resources>
 </document>
