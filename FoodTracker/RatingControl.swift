@@ -12,6 +12,14 @@ class RatingControl: UIStackView {
     required init(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
+    //MARK: Private Methods
+    
+    private func SetupButtons() {
+        //Create the button
+        let button = UIButton()
+        button.backgroundColor = UIColor.red
+    }
    
 
 
