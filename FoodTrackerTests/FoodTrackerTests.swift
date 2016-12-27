@@ -15,7 +15,7 @@ class FoodTrackerTests: XCTestCase {
     
     //Confirm that the Meal initializer return a Meal object when passed valid parameters.
     
-    func TestMealInitializationSucceeds(){
+    func TestMealInitializationSucceeds() {
         
         //Zero rating
         let zeroRatingMeal = Meal.init(name: "Zero", photo: nil, rating: 0)
@@ -34,7 +34,7 @@ class FoodTrackerTests: XCTestCase {
         
         //Rating exceeds maximum
         let largeRatingMeal = Meal.init(name: "Large", photo: nil, rating: 6)
-        XCTAssertNil(largeRatingMeal) 
+        XCTAssertNil(largeRatingMeal)
         
         //Emtpy String
         let emptyStringMeal = Meal.init(name: "", photo: nil, rating: 0)
