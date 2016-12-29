@@ -10,8 +10,6 @@ Considering the fact that I followed the tutorial to build the app I still found
 
 But I found that Swift is a solid programming language and Xcode a very intuitive and simple to use IDE.
 
-
-
 ## Installation and use
 
 1. Clone or download the repo.
