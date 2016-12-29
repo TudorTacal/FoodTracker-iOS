@@ -102,8 +102,8 @@ class MealTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: seque, sender: sender)
-        switch(seque.identifier ?? "") {
+        super.prepare(for: segue, sender: sender)
+        switch(segue.identifier ?? "") {
             case "AddItem":
                 os_log("Adding a new meal.", log: OSLog.default, type: .debug)
             case "ShowDetail":
@@ -121,9 +121,9 @@ class MealTableViewController: UITableViewController {
                 let selectedMeal = meals[indexPath.row]
                 mealDetailViewController.meal = selectedMeal
         default:
-            fatalError("Unexpected Seque Identifier; \(segue.indentifier)")
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+        
             
-
         }
     }
  
