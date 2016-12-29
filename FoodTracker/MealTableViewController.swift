@@ -112,7 +112,7 @@ class MealTableViewController: UITableViewController {
             //Add a new meal 
             let newIndexPath = IndexPath(row: meals.count, section: 0)
             meals.append(meal)
-            tableView.inserRows(at: [newIndexPath], with: .automatic)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
     
