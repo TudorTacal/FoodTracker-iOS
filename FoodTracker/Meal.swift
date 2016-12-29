@@ -13,6 +13,11 @@ import os.log
 class Meal: NSObject, NSCoding {
     
     //MARK: Properties
+    //MARK: Archiving Paths
+    
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("meals")
+    
     
     //Mark: Types
     
@@ -22,7 +27,7 @@ class Meal: NSObject, NSCoding {
         static let rating = "rating"
     }
     
-    encode(with aCoder: NSCoder)
+ 
     required convenience init?(coder aDecoder: NSCoder) {
         //The name is required. If we cannot decode a name string, the intializer should fail.
         guard let name = aDecoder.decodeObject(forKey: PropertyKey.name) as? String
