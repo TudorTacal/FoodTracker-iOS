@@ -68,8 +68,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismiss(animated: true, completion: nil)
     
     }
-    //MARK: Navigation 
+    //MARK: Navigation
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     //This method lets you configure a view controller before it's presented.
+   
     override func prepare(for seque: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: seque, sender: seque)
         //Configure the destination view controller only when the save button is pressed.
