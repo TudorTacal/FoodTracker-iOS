@@ -19,6 +19,8 @@ class MealTableViewController: UITableViewController {
        
         
         super.viewDidLoad()
+        //Use the edit button item provided by the table view controller.
+        navigationItem.leftBarButtonItem = editButtonItem
         
         //Load the samle data
         loadSampleMeals()
