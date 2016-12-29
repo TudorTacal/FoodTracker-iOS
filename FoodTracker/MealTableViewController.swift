@@ -179,6 +179,9 @@ class MealTableViewController: UITableViewController {
         } else {
             os_log("Failed to save meals...", log: OSLog.default, type: .error)
         }
-        
+    }
+    
+    private func loadMeals() -> [Meal]? {
+        return NSKeyedUnarchiver.unarchiverObject(withFile: Meal.ArchiveURL.path) as? [Meal]
     }
 }
